@@ -18,4 +18,31 @@ public class CustomerServiceImpl implements CustomerService{
                 .age(32)
                 .build();
     }
+
+    @Override
+    public CustomerDto saveCustomer(CustomerDto customerDto) {
+        return CustomerDto.builder()
+                .id(UUID.randomUUID())
+                .firstName("Farai")
+                .lastName("Chimuti")
+                .nickName("Fatso")
+                .age(32)
+                .build();
+    }
+
+    @Override
+    public CustomerDto updateCustomer(CustomerDto customerDto) {
+        return CustomerDto.builder()
+                .id(UUID.randomUUID())
+                .firstName("Farai")
+                .lastName("Chimuti")
+                .nickName("Fatso")
+                .age(32)
+                .build();
+    }
+
+    @Override
+    public void deleteCustomer(UUID ccustomerId) {
+        // to do delete
+    }
 }

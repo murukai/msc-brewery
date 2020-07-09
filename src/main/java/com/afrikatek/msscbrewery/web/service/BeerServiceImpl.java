@@ -31,4 +31,9 @@ public class BeerServiceImpl implements BeerService{
     public void updateBeer(BeerDto beerDto) {
         // update the beer
     }
+
+    @Override
+    public void deleteBeer(UUID beerId) {
+        // delete the beer
+    }
 }
